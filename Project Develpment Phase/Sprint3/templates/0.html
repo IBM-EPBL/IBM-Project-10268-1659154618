@@ -1,0 +1,113 @@
+<html lang="en" dir="ltr">
+<head>
+    <style>
+
+    </style>
+    <meta charset="utf-8">
+    <title>NUTRITION IMAGE ANALYSIS</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    body
+{
+     background-size: cover;
+}
+.bar
+{
+margin: 0px;
+padding:30px;
+background-color:black;
+opacity:0.6;
+color:red;
+font-family:'Roboto',sans-serif;
+font-style: italic;
+border-radius:30px;
+font-size:10px;
+}
+
+
+
+
+
+
+.header {	position: relative;
+			top:0;
+			margin:0px;
+			z-index: 1;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: violet ;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding-left:10px;
+			font-family: 'Comic Sans Ms'
+			font-size: 1.5vw;
+			width: 100%;
+			height:10%;
+
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: #FCAD98;
+}
+
+.topnav-right a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a:hover {
+  background-color: #FFDC00;
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: #FFDC00;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+
+
+
+</style>
+<body>
+<div class="header">
+    <div style="width:50%;float:left;font-size:1.5vw;text-align:left;color:black; padding-top:1%;padding-left:5%;">
+        AI-POWERED NUTRITION ANALYSER FOR FITNESS ENTHUSIASTS
+    </div>
+    <div class="topnav-right" style="padding-top:0.5%;">
+
+        <a href="{{ url_for('home')}}"><b>HOME</b></a>
+        <a class="active" href="{{ url_for('image1')}}"><b>CLASSIFY</b></a>
+    </div>
+</div>
+<br>
+
+<div class="results">
+    <p style="padding-top: 150px; color:blue;">
+    <h4 style="color:blue;">IMAGE CLASSIFIED IS :
+        <h4><b>
+            <h4 style="color:red;font-size: xxx-large;"><u>{{showcase1}}
+                <h4><br>
+                    <h4 style="color:red;padding:5%;"><u>{{showcase}}<h4></p>
+
+</div>
+<br>
+<br>
+
+</div>
+</body>
+</html>
